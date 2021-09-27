@@ -61,17 +61,20 @@ main {
   main #desktop {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     height: 67vh;
     background-color: #0000ff;
-    margin-left: 90px;
-    margin-top: 7%; }
+    margin-top: 3%;
+    border: solid 3px black; }
     main #desktop .wr {
+      margin-left: 90px;
       width: 50%; }
       main #desktop .wr p {
         font-family: 'Bebas Neue', cursive;
         font-size: 80px;
         line-height: 80%;
-        color: #fdc500; }
+        color: #fdc500;
+        margin-top: 80px; }
         main #desktop .wr p span {
           color: red; }
       main #desktop .wr .bot {
@@ -84,18 +87,17 @@ main {
         main #desktop .wr .bot a {
           text-decoration: none; }
     main #desktop img {
-      position: relative;
-      bottom: 80px;
-      height: 500px; }
+      height: 90%; }
   main #about {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 80vh; }
+    height: 80vh;
+    border: solid 3px black; }
     main #about article {
       background-color: #fdc500;
-      width: 300px;
-      height: 500px;
+      width: 18%;
+      height: 70%;
       margin: 20px;
       color: white;
       display: grid;
@@ -118,28 +120,52 @@ main {
     main #about .c:hover {
       background-color: orangered;
       transition: all .5s; }
+    main #about .d {
+      color: black;
+      font-family: Arial, Helvetica, sans-serif; }
+    main #about .d:hover {
+      background-color: orangered;
+      transition: all .5s; }
   main .portfolio {
     display: flex;
     flex-direction: row;
-    height: 90vh; }
-    main .portfolio .l img {
-      height: 600px; }
+    height: 90vh;
+    border: solid 3px black; }
+    main .portfolio .l {
+      width: 50%;
+      display: flex;
+      align-items: center; }
+      main .portfolio .l img {
+        width: 95%; }
     main .portfolio .r {
-      position: relative;
-      top: 250px;
-      left: 260px; }
-      main .portfolio .r a {
-        text-decoration: none; }
-      main .portfolio .r .bou {
-        display: grid;
-        place-items: center;
-        color: #0000ff;
-        font-family: 'Bebas Neue', cursive;
-        background-color: black;
-        width: 210px;
-        height: 60px; }
-      main .portfolio .r .bou:hover {
-        color: #fdc500; }
+      width: 50%;
+      display: grid;
+      place-items: center; }
+      main .portfolio .r .cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        main .portfolio .r .cont p {
+          font-size: 30px;
+          text-align: center;
+          color: #fdc500;
+          font-family: 'Yaldevi', sans-serif;
+          text-transform: uppercase;
+          margin-bottom: 30px; }
+        main .portfolio .r .cont a {
+          display: flex;
+          justify-content: center;
+          text-decoration: none; }
+        main .portfolio .r .cont .bou {
+          display: grid;
+          place-items: center;
+          color: #0000ff;
+          font-family: 'Bebas Neue', cursive;
+          background-color: black;
+          width: 210px;
+          height: 60px; }
+        main .portfolio .r .cont .bou:hover {
+          color: #fdc500; }
 
 footer {
   grid-area: footer;
