@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  height: 100%; }
+
+.container {
+  display: grid;
+  grid-template-areas: "header header header" "main   main   main" "footer footer footer"; }
+
+header {
+  grid-area: header;
+  height: 10vh;
+  width: 100%;
+  padding: 0px 80px;
+  position: fixed; }
+  header nav {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    header nav .nav_log {
+      width: 3%; }
+      header nav .nav_log img {
+        width: 90px;
+        position: relative;
+        top: 10px; }
+    header nav .nav_social {
+      width: 70%;
+      display: flex;
+      justify-content: flex-end; }
+      header nav .nav_social ion-icon {
+        font-size: 22px;
+        margin-left: 15px;
+        color: black; }
+      header nav .nav_social ion-icon:hover {
+        color: white; }
+    header nav .nav_menu {
+      width: 27%;
+      display: flex;
+      justify-content: flex-end; }
+      header nav .nav_menu ul {
+        list-style: none;
+        line-height: 13px;
+        position: relative;
+        top: 5px; }
+        header nav .nav_menu ul li a {
+          color: black;
+          text-decoration: none;
+          font-family: 'Yaldevi', sans-serif; }
+        header nav .nav_menu ul li a:hover {
+          color: white; }
+
+main {
+  grid-area: main;
+  padding: 10vh 80px 0px 80px;
+  background-color: #0000ff;
+  height: 100%; }
+  main #desktop {
+    display: flex;
+    flex-direction: row;
+    height: 67vh;
+    background-color: #0000ff;
+    margin-left: 90px;
+    margin-top: 7%; }
+    main #desktop .wr {
+      width: 50%; }
+      main #desktop .wr p {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 80px;
+        line-height: 80%;
+        color: #fdc500; }
+        main #desktop .wr p span {
+          color: red; }
+      main #desktop .wr .bot {
+        width: 310px;
+        font-size: 30px;
+        font-family: 'Yaldevi', sans-serif;
+        background-color: black;
+        color: #0000ff;
+        padding: 10px; }
+        main #desktop .wr .bot a {
+          text-decoration: none; }
+    main #desktop img {
+      position: relative;
+      bottom: 80px;
+      height: 500px; }
+  main #about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 80vh; }
+    main #about article {
+      background-color: #fdc500;
+      width: 300px;
+      height: 500px;
+      margin: 20px;
+      color: white;
+      display: grid;
+      place-items: center; }
+    main #about .t {
+      color: black;
+      font-family: Arial, Helvetica, sans-serif; }
+    main #about .t:hover {
+      background-color: orangered;
+      transition: all .5s; }
+    main #about .b {
+      color: black;
+      font-family: Arial, Helvetica, sans-serif; }
+    main #about .b:hover {
+      background-color: orangered;
+      transition: all .5s; }
+    main #about .c {
+      color: black;
+      font-family: Arial, Helvetica, sans-serif; }
+    main #about .c:hover {
+      background-color: orangered;
+      transition: all .5s; }
+  main .portfolio {
+    display: flex;
+    flex-direction: row;
+    height: 90vh; }
+    main .portfolio .l img {
+      height: 600px; }
+    main .portfolio .r {
+      position: relative;
+      top: 250px;
+      left: 260px; }
+      main .portfolio .r a {
+        text-decoration: none; }
+      main .portfolio .r .bou {
+        display: grid;
+        place-items: center;
+        color: #0000ff;
+        font-family: 'Bebas Neue', cursive;
+        background-color: black;
+        width: 210px;
+        height: 60px; }
+
+footer {
+  grid-area: footer;
+  height: 30vh;
+  padding: 0px 80px;
+  background-color: black; }

@@ -1,0 +1,109 @@
+main{
+    grid-area: main;
+    padding: 10vh 80px 0px 80px;
+    background-color: #0000ff;
+    height: 100%;
+
+    #desktop{
+        display: flex;
+        flex-direction: row;
+        height: 67vh;
+        background-color: #0000ff;
+        margin-left: 90px;
+        margin-top: 7%;
+        .wr{
+            width: 50%;
+            p{
+                font-family: 'Bebas Neue', cursive;
+                font-size: 80px;
+                line-height: 80%;
+                color: #fdc500;
+                span{
+                    color: red;
+                }
+            }
+            .bot{
+                width: 310px;
+                font-size: 30px;
+                font-family: 'Yaldevi', sans-serif;
+                background-color: black;
+                color: #0000ff;
+                padding: 10px;
+                a{
+                    text-decoration: none;
+                };
+            }
+        }
+        img{
+            position: relative;
+            bottom: 80px;
+            height: 500px;
+        }
+    }
+    #about{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 80vh;
+        article{
+            background-color: #fdc500;
+            width: 300px;
+            height: 500px;
+            margin: 20px;
+            color: white;
+            display: grid;
+            place-items: center;
+        }
+        .t{
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .t:hover{
+            background-color: orangered;
+            transition: all .5s;
+        }
+        .b{
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .b:hover{
+            background-color: orangered;
+            transition: all .5s;
+        }
+        .c{
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .c:hover{
+            background-color: orangered;
+            transition: all .5s;
+        }
+    }
+    .portfolio{
+        display: flex;
+        flex-direction: row;
+        height: 90vh;
+        .l{
+            img{
+                height: 600px;
+            }
+        }
+        .r{
+            position: relative;
+            top: 250px;
+            left: 260px;
+            a{
+                text-decoration: none;
+            }
+            .bou{
+                display: grid;
+                place-items: center;
+                color: #0000ff;
+                font-family: 'Bebas Neue', cursive;
+                background-color: black;
+                width: 210px;
+                height: 60px;
+            }
+        }
+    }
+}
