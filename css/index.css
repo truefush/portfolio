@@ -64,8 +64,7 @@ main {
     flex-wrap: nowrap;
     height: 67vh;
     background-color: #0000ff;
-    margin-top: 3%;
-    border: solid 3px black; }
+    margin-top: 3%; }
     main #desktop .wr {
       margin-left: 90px;
       width: 50%; }
@@ -82,18 +81,19 @@ main {
         font-size: 30px;
         font-family: 'Yaldevi', sans-serif;
         background-color: black;
-        color: #0000ff;
         padding: 10px; }
         main #desktop .wr .bot a {
+          color: #0000ff;
           text-decoration: none; }
+        main #desktop .wr .bot a:hover {
+          color: #fdc500; }
     main #desktop img {
       height: 90%; }
   main #about {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 80vh;
-    border: solid 3px black; }
+    height: 80vh; }
     main #about article {
       background-color: #fdc500;
       width: 18%;
@@ -130,7 +130,7 @@ main {
     display: flex;
     flex-direction: row;
     height: 90vh;
-    border: solid 3px black; }
+    border: solid 5px black; }
     main .portfolio .l {
       width: 50%;
       display: flex;

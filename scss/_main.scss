@@ -11,10 +11,11 @@ main{
         height: 67vh;
         background-color: #0000ff;
         margin-top: 3%;
-        border: solid 3px black;
+
         .wr{
             margin-left: 90px;
             width: 50%;
+
             p{
                 font-family: 'Bebas Neue', cursive;
                 font-size: 80px;
@@ -25,16 +26,20 @@ main{
                     color: red;
                 }
             }
+
             .bot{
                 width: 310px;
                 font-size: 30px;
                 font-family: 'Yaldevi', sans-serif;
                 background-color: black;
-                color: #0000ff;
                 padding: 10px;
                 a{
+                    color: #0000ff;
                     text-decoration: none;
-                };
+                }
+                a:hover{
+                    color: #fdc500;
+                }
             }
         }
         img{
@@ -47,7 +52,6 @@ main{
         flex-direction: row;
         justify-content: center;
         height: 80vh;
-        border: solid 3px black;
         article{
             background-color: #fdc500;
             width: 18%;
@@ -95,7 +99,7 @@ main{
         display: flex;
         flex-direction: row;
         height: 90vh;
-        border: solid 3px black;
+        border: solid 5px black;
 
         .l{
             width: 50%;
